@@ -6,13 +6,13 @@ public class Menu : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void Jogar()
@@ -29,11 +29,28 @@ public class Menu : MonoBehaviour
     }
     public void Aldeoes()
     {
-        SceneManager.LoadScene("Defender Vila");
+        SceneManager.LoadScene("Ato de Degender a vila");
+    }
+    public void CapituloDois()
+    {
+        SceneManager.LoadScene("Capitulo2(DefenderVila)");
+    }
+    public void Capitulo2()
+    {
+        SceneManager.LoadScene("Capitulo2(Lider dos bandidos)");
+    }
+
+    public void Perdoar()
+    {
+        SceneManager.LoadScene("Perdoar");
+    }
+    public void MataLo()
+    {
+        SceneManager.LoadScene("Mata-lo");
     }
     public void LiderDosBandidos()
     {
-        SceneManager.LoadScene("Ir atras do Lider dos bandidos]");
+        SceneManager.LoadScene("Ir atras do Lider dos bandidos");
     }
 
     public void Creditos()
