@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/SampleScene.unity
+    guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/MenuPrincipal.unity
+    guid: 1234c8ecaed4cdf4d9830a5fb1da25df
+  - enabled: 1
+    path: Assets/Scenes/Introducao.unity
+    guid: 5c497c8c656fd4f42b34876ace81e194
+  - enabled: 1
+    path: Assets/Scenes/SelecionaPersonagens.unity
+    guid: e51f56b43d142e744b85710d48e1a0a0
+  - enabled: 1
+    path: Assets/Scenes/Paladino/Paladino.unity
+    guid: 6f4b08067bc558f47a51b32b26e5f8c8
+  - enabled: 1
+    path: Assets/Scenes/Paladino/Capitulo2.unity
+    guid: 58dd9b26496f4e64794ebffe867b7545
+  - enabled: 1
+    path: Assets/Scenes/Paladino/LiderDosBandidos/Ir atras do Lider dos bandidos].unity
+    guid: 5a9d4d879ae036247a4635ea188d4a73
+  m_configObjects:
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  m_UseUCBPForAssetBundles: 0
