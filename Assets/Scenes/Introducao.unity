@@ -397,6 +397,7 @@ GameObject:
   - component: {fileID: 862975880}
   - component: {fileID: 862975882}
   - component: {fileID: 862975881}
+  - component: {fileID: 862975883}
   m_Layer: 5
   m_Name: Text (introducao)
   m_TagString: Untagged
@@ -458,8 +459,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4293322476
+  m_fontColor: {r: 0.9245283, g: 0.9027234, b: 0.9027234, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -476,10 +477,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 46.45
-  m_fontSizeBase: 36
+  m_fontSize: 45
+  m_fontSizeBase: 45
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 25.52
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -528,6 +529,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 862975879}
   m_CullTransparentMesh: 1
+--- !u!114 &862975883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 862975879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 721146097d9cfed409124550e206e849, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  texto: {fileID: 862975881}
+  mensagemCompleta: "O Imp\xE9rio de Kenshima agoniza sob o avan\xE7o do Senhor das
+    Sombras. Povoados desaparecem em sil\xEAncio, florestas se tornam cinzas e os
+    ventos sussurram nomes de guerreiros ca\xEDdos. Em meio ao caos, voc\xEA desperta
+    de um sonho prof\xE9tico, onde um drag\xE3o negro devorava o c\xE9u e uma crian\xE7a
+    chorava entre as ru\xEDnas. Chamado pelo Conselho dos Tr\xEAs, voc\xEA \xE9 levado
+    at\xE9 o Santu\xE1rio dos Destinos, onde o Or\xE1culo oferece tr\xEAs caminhos:
+    Luz, Sabedoria ou Terra."
+  velocidadeDigitacao: 0.05
 --- !u!1 &1042961500
 GameObject:
   m_ObjectHideFlags: 0
@@ -675,8 +697,9 @@ GameObject:
   - component: {fileID: 1122911523}
   - component: {fileID: 1122911525}
   - component: {fileID: 1122911524}
+  - component: {fileID: 1122911526}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Text (Continuacao)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -800,6 +823,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1122911522}
   m_CullTransparentMesh: 1
+--- !u!114 &1122911526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1122911522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 721146097d9cfed409124550e206e849, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  texto: {fileID: 1122911524}
+  mensagemCompleta: Contunuacao
+  velocidadeDigitacao: 0.05
 --- !u!1 &1698045247
 GameObject:
   m_ObjectHideFlags: 0

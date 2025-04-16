@@ -35,11 +35,6 @@ public class Menu : MonoBehaviour
     {
         SceneManager.LoadScene("Capitulo2(DefenderVila)");
     }
-    public void Capitulo2()
-    {
-        SceneManager.LoadScene("Capitulo2(Lider dos bandidos)");
-    }
-
     public void Perdoar()
     {
         SceneManager.LoadScene("Perdoar");
@@ -48,10 +43,42 @@ public class Menu : MonoBehaviour
     {
         SceneManager.LoadScene("Mata-lo");
     }
+    public void CapituloTres()
+    {
+        SceneManager.LoadScene("Capitulo3(DefenderVila)");
+    }
+
+
+    public void Capitulo2()
+    {
+        SceneManager.LoadScene("Capitulo2(Lider dos bandidos)");
+    } 
     public void LiderDosBandidos()
     {
         SceneManager.LoadScene("Ir atras do Lider dos bandidos");
     }
+    public void MataLO()
+    {
+        SceneManager.LoadScene("Mata-LO");
+    }
+    public void Perdoar2()
+    {
+        SceneManager.LoadScene("PerdoAR");
+    }
+    public void Capitulo3()
+    {
+        SceneManager.LoadScene("IntroducaoAoCapitulo3");
+    }
+    public void Encontrou()
+    {
+        SceneManager.LoadScene("Encontro");
+    }
+    public void Batalha()
+    {
+        SceneManager.LoadScene("Batalha");
+    }
+
+
 
     public void Creditos()
     {

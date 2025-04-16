@@ -978,6 +978,7 @@ GameObject:
   - component: {fileID: 1690608013}
   - component: {fileID: 1690608015}
   - component: {fileID: 1690608014}
+  - component: {fileID: 1690608016}
   m_Layer: 5
   m_Name: Text (Capitulo 1 (Paladino))
   m_TagString: Untagged
@@ -1025,9 +1026,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Cap\xEDtulo 2: O Julgamento da L\xE2mina**\r\nO Paladino corrompido fica
-    agradecido por voce tedo perdoado ele, ele queria se juntar a sua equipe mas
-    por motivos pessoais ele pode (Mas os seus aliados lhe perguntam o porque voce
-    nao o matou)"
+    agradecido por voce tedo perdoado ele,e ele queria se juntar a sua equipe mas
+    por motivos pessoais ele nao pode (Mas os seus aliados lhe perguntam o porque
+    voce nao o matou)"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1106,6 +1107,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1690608012}
   m_CullTransparentMesh: 1
+--- !u!114 &1690608016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1690608012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 721146097d9cfed409124550e206e849, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  texto: {fileID: 1690608014}
+  mensagemCompleta: "Cap\xEDtulo 2: O Julgamento da L\xE2mina**\r\nO Paladino corrompido
+    fica agradecido por voce tedo perdoado ele, ele queria se juntar a sua equipe
+    mas por motivos pessoais ele nao pode (Mas os seus aliados lhe perguntam o porque
+    voce nao o matou)"
+  velocidadeDigitacao: 0.05
 --- !u!1 &2135444985
 GameObject:
   m_ObjectHideFlags: 0
