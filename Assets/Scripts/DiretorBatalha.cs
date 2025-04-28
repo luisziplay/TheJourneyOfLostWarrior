@@ -1,5 +1,6 @@
 using System.Collections;
 using TMPro;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -10,8 +11,8 @@ public class DiretorBatalha : MonoBehaviour
     [SerializeField] Player inimigo;
     [SerializeField] TextMeshProUGUI vidaPlayer;
     [SerializeField] TextMeshProUGUI vidaInimigo;
-    /*[SerializeField] TextMeshProUGUI nomePlayer;*/
-    /*[SerializeField] TextMeshProUGUI nomeInimigo;*/
+    [SerializeField] TextMeshProUGUI nomePlayer;
+    [SerializeField] TextMeshProUGUI nomeInimigo;
     [SerializeField] TextMeshProUGUI informativo;
     /*[SerializeField] TextMeshProUGUI indicadorEspecial;*/
     /*[SerializeField] GameObject textoTextoVitoria;*/
@@ -26,9 +27,11 @@ public class DiretorBatalha : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        /*vidaPlayer.text = player.GetVida().ToString();
+        vidaPlayer.text = player.GetVida().ToString();
         vidaInimigo.text = inimigo.GetVida().ToString();
-        indicadorEspecial.text = player.ValorEspecial().ToString();*/
+        nomePlayer.text = player.GetNomePersonagem();
+        nomeInimigo.text = inimigo.GetNomePersonagem();
+        /*indicadorEspecial.text = player.ValorEspecial().ToString();*/
         botaoEspecial.interactable = false;
 
     }

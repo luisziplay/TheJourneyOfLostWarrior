@@ -5,6 +5,7 @@ using UnityEngine.Audio;
 
     public class Player : MonoBehaviour
     {
+        [SerializeField] private string nomePersonagem;
         [SerializeField] private int ataque;
         [SerializeField] private int defesa;
         [SerializeField] private int vida;
@@ -13,7 +14,12 @@ using UnityEngine.Audio;
         [SerializeField] private bool estahVivo;
         [SerializeField] private DiretorBatalha dB;
 
-        // Start is called once before the first execution of Update after the MonoBehaviour is created
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+        public string GetNomePersonagem()
+        {
+            return nomePersonagem;
+        }
+
         public int GetVida()
         {
             return vida;
@@ -52,12 +58,12 @@ using UnityEngine.Audio;
             if (valorAtaque > 0)
             {
                 dB.RecebeTexto("ARgh! Sinta Minha Furia!");
-                dB.RecebeTexto($"Voce ataca com {valorAtaque}");
+                dB.RecebeTexto($"P:{nomePersonagem} ataca com {valorAtaque}");
                 /*PlaySomAtaque();*/
             }
             else
             {
-                dB.RecebeTexto($"Voce erra o ataque.");
+                dB.RecebeTexto($"{nomePersonagem}erra o ataque.");
                 /*PlaySomErroAtaque();*/
             }
             return ataque;
@@ -69,11 +75,11 @@ using UnityEngine.Audio;
 
             if (valorDefesa > 0)
             {
-                dB.RecebeTexto($"Voce defende com {valorDefesa}");
+                dB.RecebeTexto($"{nomePersonagem} defende com {valorDefesa}");
             }
             else
             {
-                dB.RecebeTexto("Voce nao consegue defender.");
+                dB.RecebeTexto($"{nomePersonagem} nao consegue defender.");
             }
             return defesa;
         }
@@ -88,7 +94,7 @@ using UnityEngine.Audio;
         }
         else
         {
-            dB.RecebeTexto($"Voce , morreu!");
+            dB.RecebeTexto($"{nomePersonagem} , morreu!");
         }
     }
         public int Especial()
@@ -103,7 +109,7 @@ using UnityEngine.Audio;
                 {
                     int valorEspecialDobrado = (valorEspecial * 2) + fatorMultiplicador;
                     dB.RecebeTexto("ARgh! Sede de Vinguança!");
-                    dB.RecebeTexto($"Voce ataca com {valorEspecialDobrado}");
+                    dB.RecebeTexto($"{nomePersonagem} ataca com {valorEspecialDobrado}");
                     /*PlaySomEspecial();*/
                     especial = 0;
                     return valorEspecialDobrado;
@@ -111,7 +117,7 @@ using UnityEngine.Audio;
                 else if (chanceDeDobrar < 90 && especial >= 3)
                 {
                     dB.RecebeTexto("ARgh! Vou te esmagar!");
-                    dB.RecebeTexto($"Voce ataca com {valorEspecial}");
+                    dB.RecebeTexto($"{nomePersonagem} ataca com {valorEspecial}");
                     /*PlaySomAtaque();*/
                     especial = 0;
                     return valorEspecial;
