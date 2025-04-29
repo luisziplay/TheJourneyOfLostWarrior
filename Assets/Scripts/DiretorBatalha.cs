@@ -14,7 +14,7 @@ public class DiretorBatalha : MonoBehaviour
     [SerializeField] TextMeshProUGUI nomePlayer;
     [SerializeField] TextMeshProUGUI nomeInimigo;
     [SerializeField] TextMeshProUGUI informativo;
-    /*[SerializeField] TextMeshProUGUI indicadorEspecial;*/
+    [SerializeField] TextMeshProUGUI indicadorEspecial;
     /*[SerializeField] GameObject textoTextoVitoria;*/
     /*[SerializeField] GameObject textoTextoDerrota;*/
     [SerializeField] Button botaoEspecial;
@@ -31,7 +31,6 @@ public class DiretorBatalha : MonoBehaviour
         vidaInimigo.text = inimigo.GetVida().ToString();
         nomePlayer.text = player.GetNomePersonagem();
         nomeInimigo.text = inimigo.GetNomePersonagem();
-        /*indicadorEspecial.text = player.ValorEspecial().ToString();*/
         botaoEspecial.interactable = false;
 
     }
@@ -60,10 +59,8 @@ public class DiretorBatalha : MonoBehaviour
         {
             StartCoroutine(AtaqueInimigo());
         }
-
-        VerificaVitoria();
-
     }
+
     private void AtualizaDadosTela()
     {
         vidaPlayer.text = player.GetVida().ToString();
@@ -124,24 +121,17 @@ public class DiretorBatalha : MonoBehaviour
         informativo.text = "";
     }
 
-    IEnumerator TelaVitoria()
-    {
-        yield return new WaitForSeconds(2.0f);
-        /*player.PlaySomVitoria();*/
-        yield return new WaitForSeconds(1.0f);
-        /*textoTextoVitoria.SetActive(true);*/
-    }
-
     public void VerificaVitoria()
     {
         if (!inimigo.VerificaVida())
         {
-            StartCoroutine(TelaVitoria());
+            SceneManager.LoadScene("VitoriaPaladino");
         }
         else if (!player.VerificaVida())
         {
-           /* player.PlaySomMorte();*/
-           /*textoTextoDerrota.SetActive(true);*/
+            SceneManager.LoadScene("MortePaladino");
+            /* player.PlaySomMorte();*/
+            /*textoTextoDerrota.SetActive(true);*/
         }
     }
     public void ReiniciarJogo()

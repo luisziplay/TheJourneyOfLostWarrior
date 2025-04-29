@@ -1,3 +1,5 @@
+using System.Collections;
+using UnityEditor.Rendering.LookDev;
 using UnityEngine;
 using UnityEngine.Audio;
 
@@ -5,16 +7,19 @@ using UnityEngine.Audio;
 
     public class Player : MonoBehaviour
     {
-        [SerializeField] private string nomePersonagem;
-        [SerializeField] private int ataque;
-        [SerializeField] private int defesa;
-        [SerializeField] private int vida;
-        [SerializeField] private int especial;
-        [SerializeField] private int ataqueEspecial;
-        [SerializeField] private bool estahVivo;
-        [SerializeField] private DiretorBatalha dB;
+    [SerializeField] private string nomePersonagem;
+    [SerializeField] private int vida;
+    [SerializeField] private int ataque;
+    [SerializeField] private int defesa;
+    [SerializeField] private int especial;
+    [SerializeField] private bool estahVivo = true;
+    [SerializeField] private DiretorBatalha dB;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+        {
+        
+        }
         public string GetNomePersonagem()
         {
             return nomePersonagem;
@@ -99,49 +104,46 @@ using UnityEngine.Audio;
     }
         public int Especial()
         {
-            if (especial == 3)
-            {
-                int valorEspecial = Random.Range(20, ataque);
-                int chanceDeDobrar = Random.Range(0, 100);
-                int fatorMultiplicador = especial;
+        int valorEspecial = Random.Range(20, ataque);
+        int chanceDeDobrar = Random.Range(0, 100);
+        int fatorMultiplicador = especial;
 
-                if (chanceDeDobrar >= 90 && especial >= 3)
-                {
-                    int valorEspecialDobrado = (valorEspecial * 2) + fatorMultiplicador;
-                    dB.RecebeTexto("ARgh! Sede de Vinguança!");
-                    dB.RecebeTexto($"{nomePersonagem} ataca com {valorEspecialDobrado}");
-                    /*PlaySomEspecial();*/
-                    especial = 0;
-                    return valorEspecialDobrado;
-                }
-                else if (chanceDeDobrar < 90 && especial >= 3)
-                {
-                    dB.RecebeTexto("ARgh! Vou te esmagar!");
-                    dB.RecebeTexto($"{nomePersonagem} ataca com {valorEspecial}");
-                    /*PlaySomAtaque();*/
-                    especial = 0;
-                    return valorEspecial;
-                }
-                else
-                {
-                    dB.RecebeTexto("Seu especial nao esta carregado!");
-                    return 0;
-                }
+
+        if (chanceDeDobrar >= 90 && especial >= 3)
+            {
+                int valorEspecialDobrado = (valorEspecial * 2) + fatorMultiplicador;
+                dB.RecebeTexto("ARgh! Sede de Vinguança!");
+                dB.RecebeTexto($"{nomePersonagem} ataca com {valorEspecialDobrado}");
+                especial = 0;
+                return valorEspecialDobrado;
+            }
+            else if (chanceDeDobrar < 90 && especial >= 3)
+            {
+                dB.RecebeTexto("ARgh! Vou te esmagar!");
+                dB.RecebeTexto($"{nomePersonagem} ataca com {valorEspecial}");
+                especial = 0;
+                return valorEspecial;
             }
             else
             {
-                dB.RecebeTexto("O seu especial nao esta carregado");
+                dB.RecebeTexto("Seu especial nao esta carregado!");
                 return 0;
             }
         }
+    private void DefineVida() //Verifica o valor da vida e define como morto
+    {
+        if (vida <= 0)
+        {
+            vida = 0;
+            estahVivo = false; //Ta morto
+        }
+    }
 
+    
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-        {
 
-        }
 
     }
 
