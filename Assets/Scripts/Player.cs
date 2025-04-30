@@ -5,7 +5,7 @@ using UnityEngine.Audio;
 
 
 
-    public class Player : MonoBehaviour
+public class Player : MonoBehaviour
     {
     [SerializeField] private string nomePersonagem;
     [SerializeField] private int vida;
@@ -22,7 +22,7 @@ using UnityEngine.Audio;
         }
         public string GetNomePersonagem()
         {
-            return nomePersonagem;
+           return nomePersonagem;
         }
 
         public int GetVida()
@@ -57,7 +57,7 @@ using UnityEngine.Audio;
 
         public int Atacar()
         {
-            int valorAtaque = Random.Range(10, 30);
+            int valorAtaque = Random.Range(10, ataque);
             especial++;
 
             if (valorAtaque > 0)
@@ -76,7 +76,7 @@ using UnityEngine.Audio;
         }
         public int Defesa()
         {
-            int valorDefesa = Random.Range(10, 30);
+            int valorDefesa = Random.Range(10, defesa);
 
             if (valorDefesa > 0)
             {
@@ -86,23 +86,37 @@ using UnityEngine.Audio;
             {
                 dB.RecebeTexto($"{nomePersonagem} nao consegue defender.");
             }
-            return defesa;
+            return valorDefesa;
         }
     public void LevarDano(int dano)
     {
         int danoFinal = dano - Defesa();
 
-        if (estahVivo)
+        if (danoFinal <= 0)
         {
-            Debug.Log("");
-            Debug.Log($"sua vida e: {vida}");
+            StartCoroutine(TocarDefesa());
+        }
+        else if (danoFinal <= 25)
+        {
+            StartCoroutine(TocarDanoNormal(danoFinal));
         }
         else
         {
-            dB.RecebeTexto($"{nomePersonagem} , morreu!");
+            StartCoroutine(TocarDanoMaximo(danoFinal));
         }
+
+        if (estahVivo)
+        {
+            Debug.Log("");
+            Debug.Log($"{nomePersonagem}, vida: {vida}");
+        }
+        else
+        {
+            dB.RecebeTexto($"{nomePersonagem}, morreu!");
+        }
+
     }
-        public int Especial()
+    public int Especial()
         {
         int valorEspecial = Random.Range(20, ataque);
         int chanceDeDobrar = Random.Range(0, 100);
@@ -130,6 +144,37 @@ using UnityEngine.Audio;
                 return 0;
             }
         }
+    IEnumerator TocarDefesa()
+    {
+        dB.RecebeTexto($"{nomePersonagem} consegue se defender!");
+        //anim.SetTrigger("Defesa");
+        yield return new WaitForSeconds(0.5f);
+        //PlaySomDefesa();
+        //ParticulaDefesa();
+    }
+
+    IEnumerator TocarDanoNormal(int danoFinal)
+    {
+        dB.RecebeTexto($"{nomePersonagem} leva dano de {danoFinal}.");
+        //anim.SetTrigger("Dano");
+        yield return new WaitForSeconds(0.5f);
+        //PlaySomDano();
+        //ParticulaSangrar();
+        vida -= danoFinal; //vida = vida - danoFinal;
+        DefineVida();
+    }
+
+    IEnumerator TocarDanoMaximo(int danoFinal)
+    {
+        dB.RecebeTexto($"{nomePersonagem} toma uma porrada de {danoFinal}.");
+        //anim.SetTrigger("Dano");
+        yield return new WaitForSeconds(0.5f);
+        //CameraTreme(danoFinal * 0.1f);
+        //PlaySomDano();
+        //ParticulaSangrar();
+        vida -= danoFinal;
+        DefineVida();
+    }
     private void DefineVida() //Verifica o valor da vida e define como morto
     {
         if (vida <= 0)

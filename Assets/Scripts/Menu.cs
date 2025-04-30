@@ -79,6 +79,10 @@ public class Menu : MonoBehaviour
     {
         SceneManager.LoadScene("Batalha");
     }
+    public void Final()
+    {
+        SceneManager.LoadScene("FanalLiderDosBandidos");
+    }
 
 
 

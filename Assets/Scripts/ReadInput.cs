@@ -9,10 +9,10 @@ public class ReadInput : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is create
     void Start()
     {
-        inputField.onEndEdit.AddListener(HandleInput);
+        inputField.onEndEdit.AddListener(ReadLine);
     }
 
-    void HandleInput(string text)
+    public void ReadLine(string text)
     {
         Debug.Log("Você digitou: " + text);
         // Aqui você trata o que o jogador digitou

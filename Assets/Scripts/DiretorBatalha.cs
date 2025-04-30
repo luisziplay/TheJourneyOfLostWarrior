@@ -59,6 +59,7 @@ public class DiretorBatalha : MonoBehaviour
         {
             StartCoroutine(AtaqueInimigo());
         }
+
     }
 
     private void AtualizaDadosTela()
@@ -125,7 +126,7 @@ public class DiretorBatalha : MonoBehaviour
     {
         if (!inimigo.VerificaVida())
         {
-            SceneManager.LoadScene("VitoriaPaladino");
+            SceneManager.LoadScene("FanalLiderDosBandidos");
         }
         else if (!player.VerificaVida())
         {
@@ -134,8 +135,8 @@ public class DiretorBatalha : MonoBehaviour
             /*textoTextoDerrota.SetActive(true);*/
         }
     }
-    public void ReiniciarJogo()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-    }
+    ////public void ReiniciarJogo()
+    ////{
+    ////    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    ////}
 }
