@@ -899,8 +899,8 @@ MonoBehaviour:
     corrompido ,e acaba fica muito honrado em matar um cara que quebrou o codigo
     de honra dos paladinos, seus aliados o apoiam e decidem te abondonar\r"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: eb2d505be1d61274790d19f6faf1ffe4, type: 2}
+  m_sharedMaterial: {fileID: 5953863321248280153, guid: eb2d505be1d61274790d19f6faf1ffe4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

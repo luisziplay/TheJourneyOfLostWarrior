@@ -620,8 +620,8 @@ MonoBehaviour:
   m_text: "A sua jornada come\xE7a em um vilarejo sitiado por espectros. Voc\xEA
     deve escolher: defender os alde\xF5es ou ca\xE7ar o l\xEDder sombrio que os comanda."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: eb2d505be1d61274790d19f6faf1ffe4, type: 2}
+  m_sharedMaterial: {fileID: 5953863321248280153, guid: eb2d505be1d61274790d19f6faf1ffe4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1179,8 +1179,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Ca\xE7ar o l\xEDder dos bandidos "
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: eb2d505be1d61274790d19f6faf1ffe4, type: 2}
+  m_sharedMaterial: {fileID: 5953863321248280153, guid: eb2d505be1d61274790d19f6faf1ffe4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1315,8 +1315,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Defender os aldeoes '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: eb2d505be1d61274790d19f6faf1ffe4, type: 2}
+  m_sharedMaterial: {fileID: 5953863321248280153, guid: eb2d505be1d61274790d19f6faf1ffe4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
