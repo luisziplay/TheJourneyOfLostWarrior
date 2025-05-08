@@ -59,7 +59,7 @@ public class DiretorBatalha : MonoBehaviour
         {
             StartCoroutine(AtaqueInimigo());
         }
-
+        VerificaVitoria();
     }
 
     private void AtualizaDadosTela()
@@ -135,8 +135,8 @@ public class DiretorBatalha : MonoBehaviour
             /*textoTextoDerrota.SetActive(true);*/
         }
     }
-    ////public void ReiniciarJogo()
-    ////{
-    ////    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-    ////}
+    //public void ReiniciarJogo()
+    //{
+    //    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    //}
 }

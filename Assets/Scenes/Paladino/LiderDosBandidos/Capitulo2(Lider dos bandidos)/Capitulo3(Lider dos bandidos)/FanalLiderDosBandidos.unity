@@ -304,8 +304,8 @@ Transform:
   m_GameObject: {fileID: 366578093}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.1128, y: -1.78, z: 0}
-  m_LocalScale: {x: 1.2527171, y: 1.1243752, z: 1}
+  m_LocalPosition: {x: -0.42, y: -2.15, z: 0}
+  m_LocalScale: {x: 1.1462362, y: 1.0056412, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -925,12 +925,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   texto: {fileID: 1550671615}
-  mensagemCompleta: 'Voce se sacrifaca pra salvar o mundo de Kenshima da destruicao,
-    enqunto voce se esvai acaba se lembrando da morte que voce causou de tantos aldeoes
-    e se sente que essa e a unica forma de se redimir pelos seus pecados e de ser
-    uma pessoa melhor.Mas Voce fica feliz que no minimio no seu ultimo suspiro consegui
-    salvar o mundo e que todos agora as pessoas podem viver tranquilos sem a ameaca
-    do Senhor Das Trevas '
+  mensagemCompleta: 'Voce se sacrifica pra salvar o mundo de Kenshima da destruicao,
+    enquanto voce se esvai, voce acaba se lembrando das mortes que voce causou de
+    tantos aldeoes e voce sente que essa e a unica forma de se redimir pelos seus
+    pecados e de ser uma pessoa melhor.Mas voce fica feliz que no minimio no seu
+    ultimo suspiro voce  conseguiu salvar o mundo e que agora as pessoas podem viver
+    tranquilos sem a ameaca do Senhor Das Trevas '
   velocidadeDigitacao: 0.05
 --- !u!114 &1550671615
 MonoBehaviour:
@@ -952,12 +952,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Voce se sacrifaca pra salvar o mundo de Kenshima da destruicao, enqunto
-    voce se esvai acaba se lembrando da morte que voce causou de tantos aldeoes e
-    se sente que essa e a unica forma de se redimir pelos seus pecados e de ser uma
-    pessoa melhor.Mas Voce fica feliz que no minimio no seu ultimo suspiro consegui
-    salvar o mundo e que todos agora as pessoas podem viver tranquilos sem a ameaca
-    do Senhor Das Trevas '
+  m_text: 'Voce se sacrifica pra salvar o mundo de Kenshima da destruicao, enquanto
+    voce se esvai, voce acaba se lembrando das mortes que voce causou de tantos aldeoes
+    e voce sente que essa e a unica forma de se redimir pelos seus pecados e de ser
+    uma pessoa melhor.Mas voce fica feliz que no minimio no seu ultimo suspiro voce 
+    conseguiu salvar o mundo e que agora as pessoas podem viver tranquilos sem a
+    ameaca do Senhor Das Trevas '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: eb2d505be1d61274790d19f6faf1ffe4, type: 2}
   m_sharedMaterial: {fileID: 5953863321248280153, guid: eb2d505be1d61274790d19f6faf1ffe4, type: 2}
