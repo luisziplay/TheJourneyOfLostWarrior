@@ -15,11 +15,15 @@ public class Player : MonoBehaviour
     [SerializeField] private bool estahVivo = true;
     [SerializeField] private DiretorBatalha dB;
 
+    private Animator anim;
+    private SpriteRenderer spriteRenderer;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
         {
-        
-        }
+        anim = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+    }
         public string GetNomePersonagem()
         {
            return nomePersonagem;
@@ -62,13 +66,15 @@ public class Player : MonoBehaviour
 
             if (valorAtaque > 0)
             {
+                anim.SetTrigger("AtaqueHeroi");
+                anim.SetTrigger("AtaqueInimigo");
                 dB.RecebeTexto("ARgh! Sinta Minha Furia!");
-                dB.RecebeTexto($"P:{nomePersonagem} ataca com {valorAtaque}");
-                /*PlaySomAtaque();*/
+                    dB.RecebeTexto($"P:{nomePersonagem} ataca com {valorAtaque}");
+                    /*PlaySomAtaque();*/
             }
             else
             {
-                dB.RecebeTexto($"{nomePersonagem}erra o ataque.");
+            dB.RecebeTexto($"{nomePersonagem}erra o ataque.");
                 /*PlaySomErroAtaque();*/
             }
             return ataque;
@@ -184,11 +190,12 @@ public class Player : MonoBehaviour
         }
     }
 
-    
+
+
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
 
-    }
+}
 
