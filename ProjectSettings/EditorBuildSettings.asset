@@ -68,6 +68,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Paladino/LiderDosBandidos/Capitulo2(Lider dos bandidos)/Capitulo3(Lider
       dos bandidos)/MortePaladino.unity
     guid: 86fff639c8ac89945b808972b706415a
+  - enabled: 1
+    path: Assets/Scenes/Paladino/LiderDosBandidos/BatalhaLiderDosBandidos.unity
+    guid: 865838cbc11641e40929dac28933f090
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

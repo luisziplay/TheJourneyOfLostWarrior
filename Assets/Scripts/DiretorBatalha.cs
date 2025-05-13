@@ -1,6 +1,7 @@
 using System.Collections;
 using TMPro;
 using UnityEditor;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -18,9 +19,11 @@ public class DiretorBatalha : MonoBehaviour
     /*[SerializeField] GameObject textoTextoVitoria;*/
     /*[SerializeField] GameObject textoTextoDerrota;*/
     [SerializeField] Button botaoEspecial;
-    [SerializeField] Button botaoAtaque;
+    [SerializeField] Button botaoAtaque; 
+    [SerializeField] private int cena;
     string turno = "Player";
     bool verificadorDeTurno = true;
+  
 
 
 
@@ -124,19 +127,28 @@ public class DiretorBatalha : MonoBehaviour
 
     public void VerificaVitoria()
     {
-        if (!inimigo.VerificaVida())
+        if (!inimigo.VerificaVida() && cena == 1)
         {
             SceneManager.LoadScene("FanalLiderDosBandidos");
         }
-        else if (!player.VerificaVida())
+        else if (!player.VerificaVida() && cena == 1)
         {
             SceneManager.LoadScene("MortePaladino");
             /* player.PlaySomMorte();*/
             /*textoTextoDerrota.SetActive(true);*/
         }
+        else if (!inimigo.VerificaVida() && cena == 2)
+        {
+            SceneManager.LoadScene("Ir atras do Lider dos bandidos");
+        }
+        else if (!player.VerificaVida() && cena == 2)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+
     }
-    //public void ReiniciarJogo()
-    //{
-    //    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-    //}
+    public void ReiniciarJogo()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
 }

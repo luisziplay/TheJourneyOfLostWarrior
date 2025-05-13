@@ -151,7 +151,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nomePersonagem: Senhor Das Trevas
-  vida: 50
+  vida: 110
   ataque: 30
   defesa: 20
   especial: 0
@@ -1988,7 +1988,7 @@ MonoBehaviour:
   indicadorEspecial: {fileID: 262699105}
   botaoEspecial: {fileID: 187292645}
   botaoAtaque: {fileID: 1976255986}
-  cena: 1
+  cena: 0
 --- !u!1 &1582809196
 GameObject:
   m_ObjectHideFlags: 0
@@ -2157,7 +2157,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nomePersonagem: Arthur
-  vida: 50
+  vida: 100
   ataque: 30
   defesa: 20
   especial: 0

@@ -57,6 +57,10 @@ public class Menu : MonoBehaviour
     } 
     public void LiderDosBandidos()
     {
+        SceneManager.LoadScene("BatalhaLiderDosBandidos");
+    }
+    public void FinalBatalha()
+    {
         SceneManager.LoadScene("Ir atras do Lider dos bandidos");
     }
     public void MataLO()

@@ -23,7 +23,7 @@ public class Player : MonoBehaviour
         {
         anim = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-    }
+        }
         public string GetNomePersonagem()
         {
            return nomePersonagem;
