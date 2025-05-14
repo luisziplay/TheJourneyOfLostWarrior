@@ -372,126 +372,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &613625166
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 613625167}
-  - component: {fileID: 613625170}
-  - component: {fileID: 613625169}
-  - component: {fileID: 613625168}
-  m_Layer: 5
-  m_Name: Aliados
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &613625167
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 613625166}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1638799575}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 385, y: -154}
-  m_SizeDelta: {x: 484.3679, y: 565.5862}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &613625168
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 613625166}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 1, g: 0.8726415, b: 0.8726415, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 1, g: 0.8625954, b: 0, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 5
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 0
-  m_TargetGraphic: {fileID: 613625169}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &613625169
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 613625166}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 6642339726546371364, guid: 017d10a444f622742a7eab25a72ea0c9, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 1
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &613625170
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 613625166}
-  m_CullTransparentMesh: 1
 --- !u!1 &655992989
 GameObject:
   m_ObjectHideFlags: 0
@@ -527,7 +407,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -319, y: -154}
+  m_AnchoredPosition: {x: -67, y: -154}
   m_SizeDelta: {x: 456.8628, y: 530.5798}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &655992991
@@ -594,7 +474,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 7020339326443942970, guid: bad2fed363fee284a9a046c488dc0eb6, type: 3}
+  m_Sprite: {fileID: -6788167969615734115, guid: 910c44073ef3004458e29383e6f90a8c, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -857,7 +737,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -5553611335515437463, guid: 84bc3345fbbfb524f81161c0e6638d94, type: 3}
+  m_Sprite: {fileID: -8109999477941089401, guid: 89b3a4c692dbb6e4fa95d2f8d135f66c, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -981,7 +861,6 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 613625167}
   - {fileID: 655992990}
   - {fileID: 1690608013}
   - {fileID: 1566855335}
@@ -1027,8 +906,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 30, y: 294}
-  m_SizeDelta: {x: 995.8792, y: 424.4737}
+  m_AnchoredPosition: {x: 23.6384, y: 381.7894}
+  m_SizeDelta: {x: 983.1561, y: 248.8948}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1690608014
 MonoBehaviour:
@@ -1052,9 +931,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Cap\xEDtulo 2: O Julgamento da L\xE2mina**\r\nO Paladino corrompido fica
     agradecido por voce tedo perdoado ele, ele queria se juntar a sua equipe mas
-    por motivos pessoais ele nao pode (Mas os seus aliados lhe perguntam o porque
-    voce nao o matou)E voce fala que e porque estava arrependido da sua decisao de
-    ir atras do Lider dos bandidos"
+    por motivos pessoais ele nao pode\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: eb2d505be1d61274790d19f6faf1ffe4, type: 2}
   m_sharedMaterial: {fileID: 5953863321248280153, guid: eb2d505be1d61274790d19f6faf1ffe4, type: 2}
@@ -1148,9 +1025,7 @@ MonoBehaviour:
   texto: {fileID: 1690608014}
   mensagemCompleta: "Cap\xEDtulo 2: O Julgamento da L\xE2mina**\r\nO Paladino corrompido
     fica agradecido por voce tedo perdoado ele, ele queria se juntar a sua equipe
-    mas por motivos pessoais ele nao pode (Mas os seus aliados lhe perguntam o porque
-    voce nao o matou)E voce fala que e porque estava arrependido da sua decisao de
-    ir atras do Lider dos bandidos"
+    mas por motivos pessoais ele nao pode"
   velocidadeDigitacao: 0.05
 --- !u!1 &2135444985
 GameObject:

@@ -14,14 +14,21 @@ public class Player : MonoBehaviour
     [SerializeField] private int especial;
     [SerializeField] private bool estahVivo = true;
     [SerializeField] private DiretorBatalha dB;
+    [SerializeField] private AudioClip[] somAtaque;
+    [SerializeField] private AudioClip[] somDefesa;
+    [SerializeField] private AudioClip[] somEspecial;
+    [SerializeField] private AudioClip[] somDano;
+    [SerializeField] private AudioClip somEspecialPronto;
 
     private Animator anim;
+    private AudioSource audioSource;
     private SpriteRenderer spriteRenderer;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
         {
         anim = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         }
         public string GetNomePersonagem()
@@ -44,7 +51,7 @@ public class Player : MonoBehaviour
             if (especial >= 3)
             {
                 dB.RecebeTexto($"O seu especial esta pronto!");
-                /* audioSource.PlayOneShot(somEspecialPronto);*/
+                audioSource.PlayOneShot(somEspecialPronto);
                 return true;
             }
             else
@@ -69,8 +76,8 @@ public class Player : MonoBehaviour
                 anim.SetTrigger("AtaqueHeroi");
                 anim.SetTrigger("AtaqueInimigo");
                 dB.RecebeTexto("ARgh! Sinta Minha Furia!");
-                    dB.RecebeTexto($"P:{nomePersonagem} ataca com {valorAtaque}");
-                    /*PlaySomAtaque();*/
+                dB.RecebeTexto($"P:{nomePersonagem} ataca com {valorAtaque}");
+                PlaySomAtaque();
             }
             else
             {
@@ -155,7 +162,7 @@ public class Player : MonoBehaviour
         dB.RecebeTexto($"{nomePersonagem} consegue se defender!");
         //anim.SetTrigger("Defesa");
         yield return new WaitForSeconds(0.5f);
-        //PlaySomDefesa();
+        PlaySomDefesa();
         //ParticulaDefesa();
     }
 
@@ -164,7 +171,7 @@ public class Player : MonoBehaviour
         dB.RecebeTexto($"{nomePersonagem} leva dano de {danoFinal}.");
         //anim.SetTrigger("Dano");
         yield return new WaitForSeconds(0.5f);
-        //PlaySomDano();
+        PlaySomDano();
         //ParticulaSangrar();
         vida -= danoFinal; //vida = vida - danoFinal;
         DefineVida();
@@ -176,7 +183,7 @@ public class Player : MonoBehaviour
         //anim.SetTrigger("Dano");
         yield return new WaitForSeconds(0.5f);
         //CameraTreme(danoFinal * 0.1f);
-        //PlaySomDano();
+        PlaySomDano();
         //ParticulaSangrar();
         vida -= danoFinal;
         DefineVida();
@@ -188,6 +195,29 @@ public class Player : MonoBehaviour
             vida = 0;
             estahVivo = false; //Ta morto
         }
+
+
+    }
+    private void PlaySomAtaque()
+    {
+        int som = Random.Range(0, somAtaque.Length);
+        audioSource.PlayOneShot(somAtaque[som]);
+    }
+    private void PlaySomDefesa()
+    {
+        int som = Random.Range(0, somDefesa.Length);
+        audioSource.PlayOneShot(somDefesa[som]);
+    }
+    private void PlaySomEspecial()
+    {
+        int som = Random.Range(0, somEspecial.Length);
+        audioSource.PlayOneShot(somEspecial[som]);
+    }
+
+    private void PlaySomDano()
+    {
+        int som = Random.Range(0, somDano.Length);
+        audioSource.PlayOneShot(somDano[som]);
     }
 
 

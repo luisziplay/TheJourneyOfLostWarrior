@@ -563,6 +563,7 @@ GameObject:
   - component: {fileID: 747438139}
   - component: {fileID: 747438141}
   - component: {fileID: 747438140}
+  - component: {fileID: 747438142}
   m_Layer: 5
   m_Name: Text (Capitulo 1 (Paladino))
   m_TagString: Untagged
@@ -610,8 +611,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Voce consegue alcancar o Lider dos Bandidos, Mas deixa os bandidos matarem
-    os aldeoes.Voce fica triste por nao fazer o seu papel de heroi
+  m_text: 'Voce consegue derrotar  o Lider dos Bandidos, Mas deixa os bandidos matarem
+    os aldeoes e voce fica triste por nao fazer o seu papel de heroi
 
 '
   m_isRightToLeft: 0
@@ -692,6 +693,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 747438138}
   m_CullTransparentMesh: 1
+--- !u!114 &747438142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 747438138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 721146097d9cfed409124550e206e849, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  texto: {fileID: 747438140}
+  mensagemCompleta: 'Voce consegue derrotar  o Lider dos Bandidos, Mas deixa os bandidos
+    matarem os aldeoes e voce fica triste por nao fazer o seu papel de heroi
+
+'
+  velocidadeDigitacao: 0.05
 --- !u!1 &1141850124
 GameObject:
   m_ObjectHideFlags: 0
@@ -808,7 +827,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -5553611335515437463, guid: 84bc3345fbbfb524f81161c0e6638d94, type: 3}
+  m_Sprite: {fileID: -8109999477941089401, guid: 89b3a4c692dbb6e4fa95d2f8d135f66c, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1

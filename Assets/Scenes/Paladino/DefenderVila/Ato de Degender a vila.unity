@@ -353,7 +353,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: 6642339726546371364, guid: 017d10a444f622742a7eab25a72ea0c9, type: 3}
+  m_Sprite: {fileID: 7020339326443942970, guid: bad2fed363fee284a9a046c488dc0eb6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -373,8 +373,8 @@ Transform:
   m_GameObject: {fileID: 382074862}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.39, y: -1.49, z: 0}
-  m_LocalScale: {x: 2.815014, y: 2.603041, z: 1}
+  m_LocalPosition: {x: -0.01, y: -1.82, z: 0}
+  m_LocalScale: {x: 0.88883495, y: 0.92430556, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -661,7 +661,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -5553611335515437463, guid: 84bc3345fbbfb524f81161c0e6638d94, type: 3}
+  m_Sprite: {fileID: -8109999477941089401, guid: 89b3a4c692dbb6e4fa95d2f8d135f66c, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -1072,6 +1072,7 @@ GameObject:
   - component: {fileID: 1690608013}
   - component: {fileID: 1690608015}
   - component: {fileID: 1690608014}
+  - component: {fileID: 1690608016}
   m_Layer: 5
   m_Name: Text (Capitulo 1 (Paladino))
   m_TagString: Untagged
@@ -1118,8 +1119,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Voce salva a vila, mas deixa o lider fugir e levar informacoes para o
-    Senhor das sombras,E ganha aliados '
+  m_text: Voce salva a vila, mas deixa o lider fugir e levar informacoes para o Senhor
+    das sombras
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: eb2d505be1d61274790d19f6faf1ffe4, type: 2}
   m_sharedMaterial: {fileID: 5953863321248280153, guid: eb2d505be1d61274790d19f6faf1ffe4, type: 2}
@@ -1198,6 +1199,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1690608012}
   m_CullTransparentMesh: 1
+--- !u!114 &1690608016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1690608012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 721146097d9cfed409124550e206e849, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  texto: {fileID: 1690608014}
+  mensagemCompleta: Voce salva a vila, mas deixa o lider fugir e levar informacoes
+    para o Senhor das sombras
+  velocidadeDigitacao: 0.05
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
