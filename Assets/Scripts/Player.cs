@@ -138,6 +138,7 @@ public class Player : MonoBehaviour
 
         if (chanceDeDobrar >= 90 && especial >= 3)
             {
+                anim.SetTrigger("AtaqueEspecial");
                 int valorEspecialDobrado = (valorEspecial * 2) + fatorMultiplicador;
                 dB.RecebeTexto("ARgh! Sede de Vinguança!");
                 dB.RecebeTexto($"{nomePersonagem} ataca com {valorEspecialDobrado}");
@@ -146,6 +147,7 @@ public class Player : MonoBehaviour
             }
             else if (chanceDeDobrar < 90 && especial >= 3)
             {
+                anim.SetTrigger("AtaqueEspecial");
                 dB.RecebeTexto("ARgh! Vou te esmagar!");
                 dB.RecebeTexto($"{nomePersonagem} ataca com {valorEspecial}");
                 especial = 0;

@@ -34,6 +34,7 @@ public class DiretorBatalha : MonoBehaviour
         vidaInimigo.text = inimigo.GetVida().ToString();
         nomePlayer.text = player.GetNomePersonagem();
         nomeInimigo.text = inimigo.GetNomePersonagem();
+        indicadorEspecial.text = player.ValorEspecial().ToString();
         botaoEspecial.interactable = false;
 
     }
@@ -42,6 +43,7 @@ public class DiretorBatalha : MonoBehaviour
     void Update()
     {
         AtualizaDadosTela();
+
 
         if (turno == "Player" && verificadorDeTurno && player.VerificaVida())
         {
@@ -104,7 +106,7 @@ public class DiretorBatalha : MonoBehaviour
         verificadorDeTurno = false;
         botaoAtaque.interactable = false;
         botaoEspecial.interactable = false;
-        /*indicadorEspecial.text = player.ValorEspecial().ToString();*/
+        indicadorEspecial.text = player.ValorEspecial().ToString();
 
         if (turno == "Player")
         {
