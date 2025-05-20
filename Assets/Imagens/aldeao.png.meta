@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      aldeao_0: -8981885333808339152
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

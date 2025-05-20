@@ -1,5 +1,4 @@
 using System.Collections;
-using UnityEditor.Rendering.LookDev;
 using UnityEngine;
 using UnityEngine.Audio;
 
@@ -82,7 +81,6 @@ public class Player : MonoBehaviour
             else
             {
             dB.RecebeTexto($"{nomePersonagem}erra o ataque.");
-                /*PlaySomErroAtaque();*/
             }
             return ataque;
 
@@ -162,31 +160,24 @@ public class Player : MonoBehaviour
     IEnumerator TocarDefesa()
     {
         dB.RecebeTexto($"{nomePersonagem} consegue se defender!");
-        //anim.SetTrigger("Defesa");
         yield return new WaitForSeconds(0.5f);
         PlaySomDefesa();
-        //ParticulaDefesa();
     }
 
     IEnumerator TocarDanoNormal(int danoFinal)
     {
         dB.RecebeTexto($"{nomePersonagem} leva dano de {danoFinal}.");
-        //anim.SetTrigger("Dano");
         yield return new WaitForSeconds(0.5f);
         PlaySomDano();
-        //ParticulaSangrar();
-        vida -= danoFinal; //vida = vida - danoFinal;
+        vida -= danoFinal;
         DefineVida();
     }
 
     IEnumerator TocarDanoMaximo(int danoFinal)
     {
         dB.RecebeTexto($"{nomePersonagem} toma uma porrada de {danoFinal}.");
-        //anim.SetTrigger("Dano");
         yield return new WaitForSeconds(0.5f);
-        //CameraTreme(danoFinal * 0.1f);
         PlaySomDano();
-        //ParticulaSangrar();
         vida -= danoFinal;
         DefineVida();
     }

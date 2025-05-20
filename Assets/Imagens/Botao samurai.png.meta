@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Botao samurai_0: -5553611335515437463
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
